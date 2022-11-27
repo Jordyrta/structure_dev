@@ -1,0 +1,23 @@
+body {
+    background-image:url('Juste_Prix.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    color: yellow;
+}
+
+.writeHere {
+    color: black;
+}
+
+.labelToClear {
+    color: yellow;
+}

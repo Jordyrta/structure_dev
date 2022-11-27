@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right,rgba(48,50,130,255),rgba(213,208,125,255) );
+}
+
+button{
+    background-color:rgba(48,50,130,255);
+    width: 300px;
+    height: 80px;
+    border-radius:25px;
+    font-size: 30px;
+    font-style: italic;
+    color: rgba(213,208,125,255);
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 1);
+    margin-top: 20px;
+}
+
+.citation{
+    background-color: white;
+    width:1000px;
+    height: 500px;
+    margin-top: 20px;
+    border: 5px dashed rgba(48,50,130,255) ;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.citation p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 40px;
+    margin-top: 150px;
+}
