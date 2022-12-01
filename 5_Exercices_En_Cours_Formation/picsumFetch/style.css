@@ -66,7 +66,6 @@ button {
   border-radius: 25px;
   border-style: hidden;
   filter: saturate(50%);
-  background: linear-gradient(to right,#9cd996,#36d2b0);
   color: white;
   letter-spacing: 4px;
   transition: filter, letter-spacing 1s ease-in-out
@@ -96,5 +95,9 @@ img:hover {
 }
 
 section:nth-child(odd)>aside >button {
-  background: linear-gradient(to right,#63c0ed,#4f81e3);
+  background: linear-gradient(to right,#e163ed,#ff0000);
+}
+
+section:nth-child(even)>aside >button {
+  background: linear-gradient(to right,#6cfc5f,#00ffc8);
 }

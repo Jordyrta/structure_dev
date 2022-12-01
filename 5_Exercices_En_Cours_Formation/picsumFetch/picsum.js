@@ -7,7 +7,7 @@ let buttonCreation;
 let articleCreation;
 let imgCreation;
 
-fetch("https://picsum.photos/v2/list?page=1&limit=40")
+fetch("https://picsum.photos/v2/list?page=1&limit=4")
   .then((response) => {
     return response.json();
   })
@@ -20,7 +20,7 @@ fetch("https://picsum.photos/v2/list?page=1&limit=40")
         document.location.href=photo.url;
       })
     });
-  });
+});
 
 function createElements() {
   sectionCreation = document.createElement("section");
@@ -54,6 +54,8 @@ function appendElements() {
     <p>Alejandro Escamilla</p>
     <button>Visit</button>
   </aside>
-  <img src="https://picsum.photos/id/0/5000/3333" alt="">
-</section>
+  <article>
+    <img src="https://picsum.photos/id/0/5000/3333" alt="">
+  </article>
+  </section>
 */
