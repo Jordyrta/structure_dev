@@ -1,0 +1,18 @@
+article {
+    font-size: 50px;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    height: 100px;
+    text-align: center;
+    text-transform:capitalize;
+}
+
+article:nth-child(even){
+    background-color: rgb(255, 0, 0);
+}
+
+h1 {
+    font-size: 50px;
+    background-color: rgb(0, 0, 255);
+    color: white;
+}

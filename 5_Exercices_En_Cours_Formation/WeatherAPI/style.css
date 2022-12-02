@@ -1,5 +1,5 @@
 body {
-    background-image: url("/GIF/meteo.webp");
+    background-image: url("/GIF/nuage.gif");
     background-size: 100%;
     margin: 0;
     padding: 0;
@@ -9,7 +9,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.548);
+    background-color: rgba(207, 232, 248, 0.5);
+    /* background-color: rgb(102, 204, 255, 0.5);*/
     width:300px;
     height: 510px;
     margin: 10% 0px 0px 40%;
