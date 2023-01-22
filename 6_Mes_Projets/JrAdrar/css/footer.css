@@ -1,0 +1,131 @@
+footer {
+    position: relative;
+    width: 100%;
+    padding: 40px 10vw;
+    padding-bottom: 80px;
+    background: #383838;
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-content .logo {
+    height: 160px;
+}
+
+.footer-content .logo-reseaux {
+    height: 60px;
+    justify-content: center;
+}
+
+.logo-social {
+    display: flex;
+    height: 40px;
+}
+
+.footer-ul-container {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category {
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.category-title{
+    grid-column: span 2;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.category .footer-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #a9a9a9;
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
+.footer-title, .info {
+    color: #a9a9a9;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+.footer-title {
+    margin-top: 80px;
+    color: #fff;
+}
+
+.footer-social-container {
+    margin-top: 40px;
+    color: #a9a9a9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link {
+    display: flex;
+    color: #a9a9a9;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.social-link li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 0;
+}
+
+.social-link p {
+    margin: 0 0 0 10px;
+    font-size: 15px;
+}
+
+.social-link:nth-child(1) {
+    margin-left: 0;
+}
+
+.payement-link {
+    display: flex;
+    color: #a9a9a9;
+    list-style: none;
+}
+
+.logo-payement {
+    height: 55px;
+}
+
+.payement-link li {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 0;
+}
+
+.payement-link p {
+    margin: 0px 10px 0 10px;
+    font-size: 20px;
+}
+
+.footer-credit {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: #a9a9a9;
+    background: rgba(0, 0, 0, 0.2);
+}
