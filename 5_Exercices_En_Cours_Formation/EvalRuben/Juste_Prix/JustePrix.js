@@ -45,7 +45,7 @@ function initGame() {
 
 function tryNumber(essai, numberToGuess, numberTries) {
     nbEssaisSelector.textContent = "Nombre d'essais : " + numberTries
-       
+    
     if(essai == numberToGuess) {
         toHideSelector.setAttribute("style", "")
         toHideSelector.textContent= numberToGuess
@@ -57,5 +57,5 @@ function tryNumber(essai, numberToGuess, numberTries) {
 }
 
 function createNumberToGuess() {
-    return Math.floor((Math.random() * 150));
+    return Math.floor((Math.random() * 1000));
 }

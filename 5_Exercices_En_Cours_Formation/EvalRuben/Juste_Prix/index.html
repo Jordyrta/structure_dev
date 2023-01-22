@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Juste Prix</title>
 </head>
 
 <body>
     <section>
-        <button>Démarrer le jeux</button>
-        <p class="nbEssais" style="visibility: hidden;">Nombre d'essais : </p>
-        <label class="labelToClear" for="writeHere" style="visibility: hidden;"></label>
-        <input type="text" class="writeHere" name="writeHere" style="visibility: hidden;" id="inputToReset">
-        <p class="partialAnswer" style="visibility: hidden;">Bonne réponse: <span class="toHide"  style="visibility: hidden;"></span></p>
+        <div class="jeu">
+            <p>Bienvenue dans le high low games !</p>
+            <p>Le nombre générer est 1 - 1000</p>
+            <button>Démarrer le jeux</button>
+            <p class="nbEssais" style="visibility: hidden;">Nombre d'essais : </p>
+            <label class="labelToClear" for="writeHere" style="visibility: hidden;"></label>
+            <input type="text" class="writeHere" name="writeHere" style="visibility: hidden;" id="inputToReset">
+            <p class="partialAnswer" style="visibility: hidden;">Bonne réponse: <span class="toHide"  style="visibility: hidden;"></span></p>
+        </div>
     </section>
     <script src="./JustePrix.js"></script>
 </body>
