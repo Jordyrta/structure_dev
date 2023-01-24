@@ -3,30 +3,30 @@ const nextSlide = document.querySelector(".btn-next");
 const prevSlide = document.querySelector(".btn-prev");
 
 let curSlide = 0;
-let maxSlide = slides.length - 1;
+let maxSlide = slides.length - 3;
 
 slides.forEach((slide, index) => {
-    slide.style.transform = `translateX(${index * 100}%)`;
+  slide.style.transform = `translateX(${index * 100}%)`;
 });
 
 nextSlide.addEventListener("click", function () {
-    if (curSlide === maxSlide) {
-        curSlide = 0;
-    } else {
-        curSlide++;
-    }
-    slides.forEach((slide, index) => {
-        slide.style.transform = `translateX(${100 * (index - curSlide)}%)`;
-    });
+  if (curSlide === maxSlide) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  }
+  slides.forEach((slide, index) => {
+    slide.style.transform = `translateX(${100 * (index - curSlide)}%)`;
+  });
 });
 
 prevSlide.addEventListener("click", function () {
-    if (curSlide === 0) {
-        curSlide = maxSlide;
-    } else {
-        curSlide--;
-    }
-    slides.forEach((slide, index) => {
-        slide.style.transform = `translateX(${100 * (index - curSlide)}%)`;
-    });
+  if (curSlide === 0) {
+    curSlide = maxSlide;
+  } else {
+    curSlide--;
+  }
+  slides.forEach((slide, index) => {
+    slide.style.transform = `translateX(${100 * (index - curSlide)}%)`;
+  });
 });

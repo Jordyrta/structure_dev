@@ -49,9 +49,8 @@ function ValidPassword(){
         explication.textContent = "Le password est valide"
         explication.style.border = "solid"
         explication.style.borderColor = "green"
-        console.log(password.value);
     } else {
-        explication.textContent = "le password est : \ntrop court\ndoit contenir un chiffre\ndoit contenir un caractère spécial $,&,@ ou !"
+        explication.textContent = "le password est :"
         explication.style.border = "solid"
         explication.style.borderColor = "red"
         console.log(password.value);

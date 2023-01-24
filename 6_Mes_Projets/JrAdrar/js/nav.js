@@ -27,3 +27,8 @@ const createNav = () => {
 
 createNav();
 
+document.addEventListener("scroll", (event) => {
+    console.log(document.getElementById("hero-section").scrollTop);
+    
+});
+

@@ -1,32 +1,35 @@
 .slider {
-    width: 100%;
-    height: 750px;
+    max-height: 200px;
     position: relative;
     overflow: hidden;
 }
 
 .Image {
-    width: 100%;
-    height: 750px;
-    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    width: 150px;
+    height: 100%;
     transition: all 0.5s;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-left: 100px;
 }
 
 .Image img {
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 200px;
     object-fit: cover;
 }
 
 .btn {
+    display: flex;
+    align-items: center;
     position: absolute;
     width: 40px;
     height: 40px;
-    padding: 10px;
     border: none;
-    z-index: 10px;
-    cursor: pointer;
-    font-size: 100px;
+    font-size: 70px;
     color: black;
     background-color: transparent;
 }
@@ -36,11 +39,11 @@
 }
 
 .btn-prev {
-    top: 50%;
+    top: 45%;
     left: 2%;
 }
 
 .btn-next {
-    top: 50%;
-    right: 2%;
+    top: 45%;
+    right: 1.5%;
 }

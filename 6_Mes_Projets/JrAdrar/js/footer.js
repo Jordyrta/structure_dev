@@ -4,10 +4,30 @@ const createFooter = () => {
     footer.innerHTML = `
     <div class="footer-content">
         <img src="Image/jr_logo.jpg" class="logo" alt="">
-        <img src="Image/facebook.png" class="logo-reseaux" alt="">
-        <img src="Image/twitter.png" class="logo-reseaux" alt="">
-        <img src="Image/tiktok.png" class="logo-reseaux" alt="">
-        <img src="Image/instagram.png" class="logo-reseaux" alt="">
+        <div>
+            <a href="https://fr-fr.facebook.com/">
+                <img src="Image/facebook.png" class="logo-reseaux" alt="">
+            </a>
+        </div>
+        
+        <div>
+            <a href="https://twitter.com/?lang=fr">
+                <img src="Image/twitter.png" class="logo-reseaux" alt="">
+            </a>
+        </div>
+        
+        <div>
+            <a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Dfr&lang=fr">
+                <img src="Image/tiktok.png" class="logo-reseaux" alt="">
+            </a>
+        </div>
+        
+        <div>
+            <a href="https://www.instagram.com/?hl=fr">
+                <img src="Image/instagram.png" class="logo-reseaux" alt="">
+            </a>
+        </div>
+        
         <div class="footer-ul-container">
             <ul class="category">
                 <li class="category-title">CATÉGORIES</li>
@@ -33,7 +53,7 @@ const createFooter = () => {
                 <li><a href="#" class="footer-link">Jack & Jones</a></li>
                 <li><a href="#" class="footer-link">The North Face</a></li>
                 <li><a href="#" class="footer-link">Tommy Hilfiger</a></li>
-                <li><a href="#" class="footer-link">Comme Des Graçon</a></li>
+                <li><a href="#" class="footer-link">Comme Des Garçon</a></li>
             </ul>
         </div>
     </div>

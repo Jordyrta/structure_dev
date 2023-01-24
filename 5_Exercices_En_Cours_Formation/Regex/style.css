@@ -15,7 +15,7 @@ section {
     align-items: center;
     background-color: rgba(216, 85, 188, 0.5);
     width:300px;
-    height: 150px;
+    height: 180px;
     padding: 20px;
     border-radius: 10px;
     margin: 10% 0px 0px 40%;
@@ -26,6 +26,10 @@ div {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.email, .password {
+    height: 20px;
 }
 
 .boutton {
