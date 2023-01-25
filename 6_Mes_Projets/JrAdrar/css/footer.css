@@ -130,4 +130,6 @@ footer {
     text-align: center;
     color: #a9a9a9;
     background: rgba(0, 0, 0, 0.2);
+    font-style: 'jost', 'sans-serif';
+    font-weight: 700;
 }
