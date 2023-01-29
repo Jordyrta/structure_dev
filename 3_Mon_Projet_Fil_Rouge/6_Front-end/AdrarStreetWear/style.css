@@ -75,12 +75,21 @@
 /*************   Body   ***********/
 
 .fond-accueil{
-  background: url(/image/Carti.jpg);
-  background-repeat: no-repeat;
-  background-size: contain, cover;
+    background: url(/image/Carti.jpg);
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-background {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 /* .top-article {
