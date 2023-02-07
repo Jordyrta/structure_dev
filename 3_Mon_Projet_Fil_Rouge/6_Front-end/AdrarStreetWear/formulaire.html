@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav>
           <div class="nav">
-            <img src="Image/jr_logo.jpg" class="JR-logo" alt="">
+            <img src="image/jr_logo.jpg" class="JR-logo" alt="">
             
             <a class="lien-accueil" href="accueil.html">Accueil</a>
             <a class="lien-accueil" href="formulaire.html">Contactez-nous</a>
@@ -23,15 +23,29 @@
             </div>
     
             <div>
-              <a class="utilisateur" href="#"><img src="Image/utilisateur.png" alt=""></a>
-              <a class="utilisateur" href="#"><img src="Image/panier.png" alt=""></a>
-              <a class="utilisateur"><img src="Image/france.png" alt=""></a>
+              <a class="utilisateur" href="#"><img src="image/utilisateur.png" alt=""></a>
+              <a class="utilisateur" href="#"><img src="image/panier.png" alt=""></a>
+              <a class="utilisateur"><img src="image/france.png" alt=""></a>
             </div>
           </div>
         </nav>
     </header>
 
-    <div class="div-formulaire">
+    <section class="section-formulaire">
+        <div class="contact">
+          <h2 class="titre-contact">Contactez-nous</h2>
+
+          <div class="telephone">
+            <img class="svg" src="image/telephone.svg" alt="">
+            <p class="num">06 07 08 09 10</p>
+          </div>
+
+          <div class="email">
+            <img class="svg" src="image/email.svg" alt="">
+            <p class="mail">email@Adrar.com</p>
+          </div>
+        </div>
+
         <form class="form" action="contact.php" method="POST">
           <p class="text">Nom</p>
           <input type="text" name="nom" class="textform">
@@ -48,15 +62,17 @@
           <p class="etoile"><span class="star">*</span>informations obligatoires</p>
           <input type="submit" value="Envoyer" class="btn_envoyer">
         </form>
-    </div>
+
+        <img src="image/teeshirt.gif" alt="">
+    </section>
 
     <footer>
         <div class="footer-credit">
             <div class="logo-payement">
-              <img src="Image/visa.svg" class="logo-payement" alt="">
-              <img src="Image/paypal.svg" class="logo-payement" alt="">
-              <img src="Image/apple-pay.svg" class="logo-payement" alt="">
-              <img src="Image/mastercard.svg" class="logo-payement" alt="">
+              <img src="image/visa.svg" class="logo-payement" alt="">
+              <img src="image/paypal.svg" class="logo-payement" alt="">
+              <img src="image/apple-pay.svg" class="logo-payement" alt="">
+              <img src="image/mastercard.svg" class="logo-payement" alt="">
             </div>
       
             <div class="credit">
@@ -64,10 +80,10 @@
             </div>
       
             <div class="footer-haut-droit">
-              <a href="https://twitter.com/Astrow_Boi"><img src="Image/twitter.svg" class="logo-reseaux" alt=""></a>
-              <a href=""><img src="Image/snapchat.svg" class="logo-reseaux" alt=""></a>
-              <a href=""><img src="Image/facebook.svg" class="logo-reseaux" alt=""></a>
-              <a href="https://www.instagram.com/jordy.rta/"><img src="Image/instagram.svg" class="logo-reseaux" alt=""></a>
+              <a href="https://twitter.com/Astrow_Boi"><img src="image/twitter.svg" class="logo-reseaux" alt=""></a>
+              <a href=""><img src="image/snapchat.svg" class="logo-reseaux" alt=""></a>
+              <a href=""><img src="image/facebook.svg" class="logo-reseaux" alt=""></a>
+              <a href="https://www.instagram.com/jordy.rta/"><img src="image/instagram.svg" class="logo-reseaux" alt=""></a>
             </div>
       
           </div>

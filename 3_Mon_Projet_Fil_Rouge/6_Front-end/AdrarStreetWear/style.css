@@ -89,6 +89,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .fond-accueil video {
   overflow: hidden;
   z-index: -1;
@@ -327,12 +328,14 @@
   padding: 0;
   border: none;
 }
+
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 600px;
 }
+
 .textform {
   outline: 3px solid #000000;
   padding: 0;
@@ -343,6 +346,7 @@
   text-align: center;
   font-size: 24px;
 }
+
 .text {
   font-family: Jost;
   font-size: 26px;
@@ -352,6 +356,7 @@
   width: 200px;
   margin: 10px 0;
 }
+
 .message {
   outline: 3px solid #000000;
   padding: 0;
@@ -363,6 +368,7 @@
   border-radius: 10px;
   font-size: 24px;
 }
+
 .btn_envoyer {
   font-family: Jost;
   font-size: 22px;
@@ -380,24 +386,29 @@
   box-shadow: 0 9px #999;
   cursor: pointer;
 }
+
 .btn_envoyer:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
   transform: scale(0.9);
 }
+
 .btn_envoyer:hover {
   width: 200px;
   background-color: white;
   color: black;
 }
+
 @keyframes hover-animation {
   0% {
     width: 175px;
   }
+
   100% {
     width: 200px;
   }
 }
+
 .etoile {
   margin-top: 10px;
   height: 36px;
@@ -406,6 +417,7 @@
   font-weight: 400;
   font-size: 18px;
 }
+
 .star {
   color: #306936;
 }
