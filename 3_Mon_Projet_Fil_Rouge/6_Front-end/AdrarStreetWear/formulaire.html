@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="nav">
+            <img src="Image/jr_logo.jpg" class="JR-logo" alt="">
+            
+            <a class="lien-accueil" href="accueil.html">Accueil</a>
+            <a class="lien-accueil" href="formulaire.html">Contactez-nous</a>
+            <a class="lien-accueil" href="#">Panier</a>
+            
+            <div class="search">
+              <input type="text" class="search-box" placeholder="Rechercher des articles">
+              <input type="submit" class="search-btn" value="Rechercher">
+            </div>
+    
+            <div>
+              <a class="utilisateur" href="#"><img src="Image/utilisateur.png" alt=""></a>
+              <a class="utilisateur" href="#"><img src="Image/panier.png" alt=""></a>
+              <a class="utilisateur"><img src="Image/france.png" alt=""></a>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="div-formulaire">
+        <form class="form" action="contact.php" method="POST">
+          <p class="text">Nom</p>
+          <input type="text" name="nom" class="textform">
+          <br>
+          <p  class="text">Prénom</p>
+          <input type="text" name="prenom" class="textform">
+          <br>
+          <p  class="text">Adresse e-mail<span class="star"></span></p>
+          <input type="text" name="email" class="textform" required>
+          <br>
+          <p  class="text">Message<span class="star"></span></p>
+          <textarea type="text" name="message" class="message" required></textarea>
+          <br>
+          <p class="etoile"><span class="star">*</span>informations obligatoires</p>
+          <input type="submit" value="Envoyer" class="btn_envoyer">
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-credit">
+            <div class="logo-payement">
+              <img src="Image/visa.svg" class="logo-payement" alt="">
+              <img src="Image/paypal.svg" class="logo-payement" alt="">
+              <img src="Image/apple-pay.svg" class="logo-payement" alt="">
+              <img src="Image/mastercard.svg" class="logo-payement" alt="">
+            </div>
+      
+            <div class="credit">
+              <p>© 2022 - AdrarStreetWear.com</p>
+            </div>
+      
+            <div class="footer-haut-droit">
+              <a href="https://twitter.com/Astrow_Boi"><img src="Image/twitter.svg" class="logo-reseaux" alt=""></a>
+              <a href=""><img src="Image/snapchat.svg" class="logo-reseaux" alt=""></a>
+              <a href=""><img src="Image/facebook.svg" class="logo-reseaux" alt=""></a>
+              <a href="https://www.instagram.com/jordy.rta/"><img src="Image/instagram.svg" class="logo-reseaux" alt=""></a>
+            </div>
+      
+          </div>
+    </footer>
+</body>
+</html>
