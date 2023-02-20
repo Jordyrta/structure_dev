@@ -1,11 +1,30 @@
+<?php 
+    $DB_NAME = "jradrar";
+    $DB_USER = "root";
+    $DB_PASS = "";
+    // Connexion à la base de données
+    $bdd = new PDO('mysql:host=localhost;dbname=' . $DB_NAME, $DB_USER, $DB_PASS, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    // Préparation de la requête SQL nous stockons dans une variable $req la requête à exécuter
+    if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['email']) && isset($_POST['message'])){
+        $nom = $_POST['nom'];
+        $prenom = $_POST['prenom'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $insert = " INSERT INTO contact(nom, prenom, email, message) VALUES ('$nom','$prenom','$email','$message');";
+        $req = $bdd->prepare($insert);
+        // Exécution de la requête SQL
+        $req->execute();
+    }
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 <body>
     <header>
@@ -46,7 +65,7 @@
           </div>
         </div>
 
-        <form class="form" action="contact.php" method="POST">
+        <form class="form" method="POST">
           <p class="text">Nom</p>
           <input type="text" name="nom" class="textform">
           <br>
