@@ -1,0 +1,45 @@
+Nom du site : AdrarStreetWear
+
+A quel besoin répond t'il : Achat d'article / Visualité d'article
+
+Quel sujet aborde t'il : La mode
+
+Quel service rend t'il : Avoir son prope style vestimentaire
+
+Pourquoi et quel genre d'utilisateur viendra sur mon site : Des personnes attiré par la mode et par le streetwear, 
+pas d'age en particulier.
+
+mot clé : hype, streetwear, mode, style, sneakers, drip, marque perso,  
+
+Notre site a pour but de relayer des articles qui ont une tres bonne tendance.
+
+Avoir son propre style est une forme d'identité le cleint voudra acheter des articles qui est prope a lui meme 
+selon son style vestimentaire.
+
+L'inconvénient peut par fois etre le budget du client, les nouvelles articles peuvent etre couteux.
+
+QUESTIONS :
+
+Pourquoi acheter dans votre site ?
+
+Site StreetWear ?
+
+Quel est le mode de livraison ?
+
+Quel sont les moyens de payement ?
+
+Last question ?
+
+CAS AGACANT :
+
+Son parasite
+Pubs
+Cookies
+
+5 Ressources qui ralenti le site : 
+
+Police d'écriture
+Fichier JS/CSS
+Format image "avif" recommander
+Cache = meta no-store / nocache
+
