@@ -16,6 +16,7 @@
   justify-content: space-around;
   align-items: center;
   background-color: white;
+  border-bottom: 1px solid #d1d1d1;
 }
 
 .JR-logo {
@@ -62,7 +63,6 @@
   align-items: center;
   list-style: none;
   font-weight: 600;
-  border-top: 1px solid #d1d1d1;
   border-bottom: 1px solid #d1d1d1;
   background-color: white;
 }
@@ -374,15 +374,14 @@
   font-size: 22px;
   font-weight: 700;
   text-align: center;
-  color: white;
+  color: black;
   width: 175px;
   height: 40px;
-  background: #306936;
+  background: #ffffff;
   outline: 3px solid #000000;
   padding: 0;
   border: none;
   border-radius: 10px;
-  transition: all 0.2s ease-in-out;
   box-shadow: 0 9px #999;
   cursor: pointer;
 }
@@ -390,13 +389,11 @@
 .btn_envoyer:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-  transform: scale(0.9);
 }
 
 .btn_envoyer:hover {
-  width: 200px;
-  background-color: white;
-  color: black;
+  background-color: #383838ca;
+  color: white;
 }
 
 @keyframes hover-animation {

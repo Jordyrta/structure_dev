@@ -1,52 +1,39 @@
+<?php
+    include("../models/connect.php");
+    // var_dump($_SESSION);
+    // die;
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Accueil">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <title>Acceuil</title>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="nav">
-        <img src="Image/jr_logo.jpg" class="JR-logo" alt="">
-        
-        <a class="lien-accueil" href="#">Accueil</a>
-        <a class="lien-accueil" href="formulaire.php">Contactez-nous</a>
-        <a class="lien-accueil" href="#">Panier</a>
-        
-        <div class="search">
-          <input type="text" class="search-box" placeholder="Rechercher des articles">
-          <input type="submit" class="search-btn" value="Rechercher">
-        </div>
+  
+  <?php
+    require "./nav.php";
+  ?>
 
-        <div>
-          <a class="utilisateur" href="#" id="connexion"><img src="Image/utilisateur.png" alt=""></a>
-          <span class="close">&times;</span>
-          <a class="utilisateur" href="#"><img src="Image/panier.png" alt=""></a>
-          <a class="utilisateur"><img src="Image/france.png" alt=""></a>
-        </div>
-      </div>
-
-      <ul class="links-container">
-        <li class="link-item"><a href="#" class="link">Homme</a></li>
-        <li class="link-item"><a href="#" class="link">Femme</a></li>
-        <li class="link-item"><a href="#" class="link">Accessoire</a></li>
-      </ul>
-    </nav>
-  </header>
-
+  <ul class="links-container">
+    <li class="link-item"><a href="#" class="link">Homme</a></li>
+    <li class="link-item"><a href="#" class="link">Femme</a></li>
+    <li class="link-item"><a href="#" class="link">Accessoire</a></li>
+  </ul>
 
   <div class="fond-accueil">
     <video id="background-video" autoplay loop muted>
-    <source src="image/video-background.mp4" type="video/mp4">
+    <source src="../image/video-background.mp4" type="video/mp4">
     </video>
   </div>
 
@@ -55,43 +42,43 @@
   <div class="slider">
 
     <div class="Image">
-      <img src="image/TeeNike.jpg" alt="">
+      <img src="../image/TeeNike.webp" alt="">
     </div>
 
     <div class="Image">
-      <img src="image/TNF.jpg" alt="">
+      <img src="../image/TNF.webp" alt="">
     </div>
 
     <div class="Image">
-      <img src="image/Cargo.jpg" alt="">
+      <img src="../image/Cargo.webp" alt="">
     </div>
 
     <div class="Image">
-      <img src="image/VesteCDG.jpg" alt="">
+      <img src="../image/VesteCDG.webp" alt="">
     </div>
 
     <div class="Image">
-      <img src="image/Veste.jpg" alt="">
+      <img src="../image/Veste.webp" alt="">
     </div>
 
     <div class="Image">
-      <img src="image/Adidasjpg.jpg" alt="">
+      <img src="../image/Adidas.webp" alt="">
     </div>
 
     <div class="Image">
-      <img src="image/Nocta.jpg" alt="">
+      <img src="../image/Nocta.webp" alt="">
     </div>
 
     <div class="Image">
-      <img src="image/Pantalon.jpg" alt="">
+      <img src="../image/Pantalon.webp" alt="">
     </div>
 
     <div class="Image">
-      <img src="image/Polo.jpg" alt="">
+      <img src="../image/Polo.webp" alt="">
     </div>
 
     <div class="Image">
-      <img src="image/Pull.jpg" alt="">
+      <img src="../image/Pull.webp" alt="">
     </div>
 
     <div class="fleche">
@@ -105,17 +92,17 @@
 
   <section class="cat">
     <div class="doudoune">
-      <img class="cat-img" src="image/TNF.jpg" alt="" width="291.5" height="350px">
+      <img class="cat-img" src="../image/TNF.webp" alt="" width="291" height="350px">
       <p class="cat-p">Doudounes</p>
     </div>
 
     <div class="sneaker">
-      <img class="cat-img" src="image/Nocta.jpg" alt="" width="478.1" height="350px">
+      <img class="cat-img" src="../image/Nocta.webp" alt="" width="478" height="350px">
       <p class="cat-p">Sneakers</p>
     </div>
 
     <div class="pantalon">
-      <img class="cat-img" src="image/Pantalon.jpg" alt="" width="291.5" height="350px">
+      <img class="cat-img" src="../image/Pantalon.webp" alt="" width="291" height="350px">
       <p class="cat-p">Pantalon</p>
     </div>
   </section>
@@ -127,25 +114,25 @@
 
         <ul class="livraison">
           <li>
-            <img src="Image/livraison-de-colis.png" class="logo-livraison" alt="">
+            <img src="../image/livraison-de-colis.png" class="logo-livraison" alt="">
             <p>Satisfait ou remboursé <br> 14 jours pour changer d'avis</p>
           </li>
           <li>
-            <img src="Image/livraison-rapide.png" class="logo-livraison" alt="">
+            <img src="../image/livraison-rapide.png" class="logo-livraison" alt="">
             <p>Livraison en 48H <br> Domicile ou point relais</p>
           </li>
           <li>
-            <img src="Image/fast-delivery.png" class="logo-livraison" alt="">
+            <img src="../image/fast-delivery.png" class="logo-livraison" alt="">
             <p>Livraison gratuite dès 99€</p>
           </li>
           <li>
-            <img src="Image/paiement-securise.png" class="logo-livraison" alt="">
+            <img src="../image/paiement-securise.png" class="logo-livraison" alt="">
             <p>Paiement en ligne sécurisé</p>
           </li>
         </ul>
       </div>
 
-      <div class="footer-content">
+      <div class="footer-content" aria-label="Categorie & marque">
         <div class="footer-gauche">
           <ul class="category">
             <p class="category-title">CATÉGORIES</p>
@@ -177,17 +164,17 @@
         </div>
 
         <div class="footer-droite">
-          <img src="Image/jr_logo.jpg" class="logo" alt="">
+          <img src="../image/jr_logo.webp" class="logo" alt="">
         </div>
       </div>
     </section>
 
     <div class="footer-credit">
       <div class="logo-payement">
-        <img src="Image/visa.svg" class="logo-payement" alt="">
-        <img src="Image/paypal.svg" class="logo-payement" alt="">
-        <img src="Image/apple-pay.svg" class="logo-payement" alt="">
-        <img src="Image/mastercard.svg" class="logo-payement" alt="">
+        <img src="../image/visa.svg" class="logo-payement" alt="">
+        <img src="../image/paypal.svg" class="logo-payement" alt="">
+        <img src="../image/apple-pay.svg" class="logo-payement" alt="">
+        <img src="../image/mastercard.svg" class="logo-payement" alt="">
       </div>
 
       <div class="credit">
@@ -195,15 +182,15 @@
       </div>
 
       <div class="footer-haut-droit">
-        <a href="https://twitter.com/Astrow_Boi"><img src="Image/twitter.svg" class="logo-reseaux" alt=""></a>
-        <a href=""><img src="Image/snapchat.svg" class="logo-reseaux" alt=""></a>
-        <a href=""><img src="Image/facebook.svg" class="logo-reseaux" alt=""></a>
-        <a href="https://www.instagram.com/jordy.rta/"><img src="Image/instagram.svg" class="logo-reseaux" alt=""></a>
+        <a href="https://twitter.com/Astrow_Boi" aria-label="Twitter"><img src="../image/twitter.svg" class="logo-reseaux" alt=""></a>
+        <a href="#" aria-label="Snapchat"><img src="../image/snapchat.svg" class="logo-reseaux" alt=""></a>
+        <a href="#" aria-label="Facebook"><img src="../image/facebook.svg" class="logo-reseaux" alt=""></a>
+        <a href="https://www.instagram.com/jordy.rta/" aria-label="Instagram"><img src="../image/instagram.svg" class="logo-reseaux" alt=""></a>
       </div>
 
     </div>
   </footer>
-  <script src="caroussel.js"></script>
+  <script src="../caroussel.js"></script>
 </body>
 
 </html>
