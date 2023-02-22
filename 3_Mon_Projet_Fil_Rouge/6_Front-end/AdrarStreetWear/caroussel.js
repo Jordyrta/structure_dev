@@ -3,7 +3,7 @@ const nextSlide = document.querySelector(".btn-next"); // bouton suivant
 const prevSlide = document.querySelector(".btn-prev"); // bouton précédent
 
 let curSlide = 0; // slide actuel
-let maxSlide = slides.length -2; // slide a ne pas dépasser
+let maxSlide = slides.length -2; // taille du tableau
 
 slides.forEach((slide, index) => {
   slide.style.transform = `translateX(${index * 100}%)`; 

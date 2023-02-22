@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../contact.css">
+    <link rel="stylesheet" href="../formulaire.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Connexion</title>
 </head>
 
@@ -14,25 +15,25 @@
     <?php
     require "./nav.php";
     ?>
+    <div class="grid">
+        <h1>Bienvenue</h1>
 
-    <h1>Adrar Street Wear</h1>
+        <h2>Connexion</h2>
 
-    <h2>Bienvenue</h2>
+        <form action="../controllers/connexion.php" method="post" class="connexion">
+            <input type="hidden" name="form_connexion" value="1">
+            <input placeholder="E-mail" class="text" type="email" name="form_email" required>
+            <input placeholder="Mot de passe" class="text" type="password" name="form_password">
+            <input class="bouton" type="submit" value="Se connecter" id="btnconnect">
+        </form>
+        <?php
+        if (isset($message)) {
+            echo $message;
+        } ?>
 
-    <form action="../controllers/connexion.php" method="post" class="form">
-        <input type="hidden" name="form_connexion" value="1">
-        <label for="form_email">E-mail</label>
-        <input class="textform" type="email" name="form_email" required>
-        <label for="form_password">Mot de passe</label>
-        <input class="textform" type="password" name="form_password">
-        <input class="btn_envoyer" type="submit" value="Se connecter" id="btnconnect">
-    </form>
-    <?php
-    if (isset($message)) {
-        echo $message;
-    } ?>
-
-    <p>Pas encore inscrit ? <a href="../views/register.php">Inscrivez-vous</a></p>
+        <p>Pas encore inscrit ? <a href="../views/register.php">Inscrivez-vous</a></p>
+    </div>
+    
 
     <?php
     require "./footer.php";

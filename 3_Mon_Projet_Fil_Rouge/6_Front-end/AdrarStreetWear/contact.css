@@ -3,59 +3,8 @@
     font-family: "Jost", sans-serif;
 }
 
-/**************************     NavBar     **************************/
 
-.lien-accueil {
-    text-decoration: none;
-    color: #383838;
-}
-
-.nav {
-    padding: 10px 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-    border-bottom: 1px solid #d1d1d1;
-}
-
-.JR-logo {
-    height: 60px;
-}
-
-.search {
-    display: flex;
-}
-
-.search-box {
-    width: 300px;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: 1px solid #d1d1d1;
-    color: #a9a9a9;
-}
-
-.search-btn {
-    padding: 10px 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    cursor: pointer;
-    background: #383838;
-    color: #ffff;
-}
-
-.search-box::placeholder {
-    color: #a9a9a9;
-}
-
-.utilisateur img {
-    margin-left: 5px;
-    width: 30px;
-}
-
-
-/******* Formulaire *******/
+/******* Formulaire de contact *******/
 
 .section-formulaire {
     display: flex;
@@ -179,26 +128,4 @@
 
 .star {
     color: red;
-}
-
-/******* Vrai footer *******/
-
-.logo-reseaux {
-    height: 40px;
-    margin-right: 10px;
-}
-
-.footer-credit {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    color: white;
-    background: #383838ca;
-}
-
-.logo-payement {
-    display: flex;
-    margin-left: 10px;
-    height: 55px;
 }

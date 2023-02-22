@@ -13,7 +13,7 @@
         if(empty($select->fetch(PDO::FETCH_COLUMN))) {
 
             if (isset($_FILES['file'])) {
-                $extensions_ok = array('png', 'jpg', 'jpeg');
+                $extensions_ok = array('png', 'jpg', 'jpeg', 'webp');
                 $countfiles = count($_FILES['file']['name']);
             
                 for ($i = 0; $i < $countfiles; $i++) {
