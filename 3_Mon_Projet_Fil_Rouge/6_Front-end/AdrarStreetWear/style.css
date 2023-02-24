@@ -146,7 +146,7 @@
   display: inline-flex;
   justify-content: space-between;
   width: 70px;
-  height: 100%;
+  height: auto;
   transition: all 0.5s;
   flex-direction: row;
   align-items: center;
@@ -278,10 +278,6 @@
   font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
-  color: #a9a9a9;
-}
-
-.footer-link:hover {
   color: #fff;
 }
 
@@ -318,3 +314,14 @@
 }
 
 /******* FAIT *******/
+
+
+.img-portrait {
+  width: 291px; 
+  height: auto;
+}
+
+.img-landscape {
+  width: 478px; 
+  height: auto;
+}

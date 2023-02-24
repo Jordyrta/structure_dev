@@ -15,6 +15,7 @@
     <?php
     require "./nav.php";
     ?>
+    
     <div class="grid">
         <h1>Bienvenue</h1>
 
@@ -23,7 +24,7 @@
         <form action="../controllers/connexion.php" method="post" class="connexion">
             <input type="hidden" name="form_connexion" value="1">
             <input placeholder="E-mail" class="text" type="email" name="form_email" required>
-            <input placeholder="Mot de passe" class="text" type="password" name="form_password">
+            <input placeholder="Mot de passe" class="text" type="password" name="form_password" required>
             <input class="bouton" type="submit" value="Se connecter" id="btnconnect">
         </form>
         <?php
@@ -31,7 +32,7 @@
             echo $message;
         } ?>
 
-        <p>Pas encore inscrit ? <a href="../views/register.php">Inscrivez-vous</a></p>
+        <p class="register">Pas encore inscrit ? <a href="../views/register.php">Inscrivez-vous</a></p>
     </div>
     
 

@@ -63,8 +63,6 @@ if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['email']) &&
       <p class="text">Message<span class="star"></span></p>
       <textarea type="text" name="message" class="message" required></textarea>
       <br>
-      <p class="etoile"><span class="star">*</span>informations obligatoires</p>
-
       <input type="submit" value="Envoyer" class="btn_envoyer">
 
     </form>

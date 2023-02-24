@@ -1,7 +1,7 @@
 <?php
     // On inclut notre connecteur à la base de données
     include("../models/connect.php");
-     // On inclut la vue à notre contrôleur
+     // On inclut la vue inscription à notre contrôleur
      include("../views/register.php");
    
     // On entre dans la boucle seulement lors de l’envoi du formulaire
@@ -12,8 +12,8 @@
         $select->execute();
         if(empty($select->fetch(PDO::FETCH_COLUMN))) {
 
-            if (isset($_FILES['file'])) {
-                $extensions_ok = array('png', 'jpg', 'jpeg', 'webp');
+            if (isset($_FILES['file'])) { // on va vérifier si la variable existe
+                $extensions_ok = array('png', 'jpg', 'jpeg', 'webp'); // On définie les extensions qu'on veut
                 $countfiles = count($_FILES['file']['name']);
             
                 for ($i = 0; $i < $countfiles; $i++) {
@@ -35,7 +35,7 @@
             }
             // Si ce n'est pas le cas, on vient l'insérer
             $insert = $db->prepare("INSERT INTO utilisateur(nom_utilisateur, prenom_utilisateur, email_utilisateur, mot_de_passe_utilisateur, image_utilisateur, id_role)
-                                    VALUES(:nom_utilisateur, :prenom_utilisateur, :email_utilisateur, :mot_de_passe_utilisateur, :image_utilisateur, 2);"); // 2 = utilisateur
+                                    VALUES(:nom_utilisateur, :prenom_utilisateur, :email_utilisateur, :mot_de_passe_utilisateur, :image_utilisateur, 2);"); // 2 = utilisateur / 1 = admin
             $insert->bindParam(":nom_utilisateur", $_POST['form_nom']);
             $insert->bindParam(":prenom_utilisateur", $_POST['form_prenom']);
             $insert->bindParam(":email_utilisateur", $_POST['form_email']);

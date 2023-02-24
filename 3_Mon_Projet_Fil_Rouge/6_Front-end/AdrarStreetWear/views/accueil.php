@@ -92,17 +92,17 @@
 
   <section class="cat">
     <div class="doudoune">
-      <img class="cat-img" src="../image/TNF.webp" alt="" width="291" height="350px">
+      <img class="cat-img img-portrait" src="../image/TNF.webp" alt="">
       <p class="cat-p">Doudounes</p>
     </div>
 
     <div class="sneaker">
-      <img class="cat-img" src="../image/Nocta.webp" alt="" width="478" height="350px">
+      <img class="cat-img img-landscape" src="../image/Nocta.webp" alt="">
       <p class="cat-p">Sneakers</p>
     </div>
 
     <div class="pantalon">
-      <img class="cat-img" src="../image/Pantalon.webp" alt="" width="291" height="350px">
+      <img class="cat-img img-portrait" src="../image/Pantalon.webp" alt="">
       <p class="cat-p">Pantalon</p>
     </div>
   </section>
@@ -190,7 +190,7 @@
 
     </div>
   </footer>
-  <script src="../caroussel.js"></script>
+  <script src="../carousel.js"></script>
 </body>
 
 </html>

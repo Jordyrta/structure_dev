@@ -19,11 +19,11 @@
         <h1>Inscription</h1>
         <form action="../controllers/inscription.php" method="post" enctype="multipart/form-data" class="inscription">
             <input type="hidden" name="form_inscription" value="1">
-            <input type="text" name="form_nom" placeholder="Nom" class="text">
-            <input type="text" name="form_prenom" placeholder="Prenom" class="text">
-            <input type="text" name="form_email" placeholder="Mail" class="text">
-            <input type="password" name="form_password" placeholder="Mot de passe" class="text">
-            <input type="file" name="file[]">
+            <input type="text" name="form_nom" placeholder="Nom" class="text" required>
+            <input type="text" name="form_prenom" placeholder="Prenom" class="text" required>
+            <input type="text" name="form_email" placeholder="Mail" class="text" required>
+            <input type="password" name="form_password" placeholder="Mot de passe" class="text" required>
+            <input type="file" name="file[]" class="text" required>
             <input type="submit" value="S'inscrire" class="bouton2">
         </form>
     </div>
