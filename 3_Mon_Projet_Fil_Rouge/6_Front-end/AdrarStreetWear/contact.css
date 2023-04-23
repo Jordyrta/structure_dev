@@ -120,3 +120,51 @@
     transform: scale(0.9);
 }
 
+@media screen and (max-width: 376px) {
+    .nav {
+        display: none;
+    }
+
+    .topnav{
+        display: block;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+    
+    .topnav #myLinks {
+        display: none;
+    }
+    
+    .topnav a {
+        color: white;
+        padding: 16px 20px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+    
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 10px;
+    }
+    
+    .topnav a:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 48px;
+    }
+}

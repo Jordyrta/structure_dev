@@ -28,3 +28,4 @@ if (!empty($_POST["form_connexion"])) {  // Vérifier si le formulaire de connex
 
     require("../views/form_connexion.php");  // Inclure le fichier du formulaire de connexion
 }
+?>

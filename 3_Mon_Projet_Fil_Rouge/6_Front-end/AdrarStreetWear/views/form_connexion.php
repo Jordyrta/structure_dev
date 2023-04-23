@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 
 <body>
     <?php
-    require "./nav.php";
+        require "./nav.php";
     ?>
     
     <div class="grid">

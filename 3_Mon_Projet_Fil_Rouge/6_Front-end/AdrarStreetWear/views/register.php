@@ -23,7 +23,7 @@
             <input type="text" name="form_prenom" placeholder="Prenom" class="text" required>
             <input type="text" name="form_email" placeholder="Mail" class="text" required>
             <input type="password" name="form_password" placeholder="Mot de passe" class="text" required>
-            <input type="file" name="file[]" class="text" required>
+            <!-- <input type="file" name="file[]" class="text"> -->
             <input type="submit" value="S'inscrire" class="bouton2">
         </form>
     </div>

@@ -14,7 +14,7 @@
     require "./nav.php";
     ?>
 
-    <fieldset>
+    <fieldset class="article">
         <legend>Ajout article</legend>
         <form method="post" action="../controllers/ajout.php">
             <input type="hidden" name="form_insert" value="1">
@@ -45,6 +45,8 @@
             <input type="submit" value="Enregistrer">
         </form>
     </fieldset>
+
+    <a href="read.php">Lire article</a>
 
 
     <?php

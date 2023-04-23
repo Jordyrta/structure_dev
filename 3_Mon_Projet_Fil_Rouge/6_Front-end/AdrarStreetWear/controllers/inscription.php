@@ -34,15 +34,15 @@
                 }
             }
             // Si ce n'est pas le cas, on vient l'insérer
-            $insert = $db->prepare("INSERT INTO utilisateur(nom_utilisateur, prenom_utilisateur, email_utilisateur, mot_de_passe_utilisateur, image_utilisateur, id_role)
-                                    VALUES(:nom_utilisateur, :prenom_utilisateur, :email_utilisateur, :mot_de_passe_utilisateur, :image_utilisateur, 2);"); // 2 = utilisateur / 1 = admin
+            $insert = $db->prepare("INSERT INTO utilisateur(nom_utilisateur, prenom_utilisateur, email_utilisateur, mot_de_passe_utilisateur, id_role)
+                                    VALUES(:nom_utilisateur, :prenom_utilisateur, :email_utilisateur, :mot_de_passe_utilisateur, 2);"); // 2 = utilisateur / 1 = admin
             $insert->bindParam(":nom_utilisateur", $_POST['form_nom']);
             $insert->bindParam(":prenom_utilisateur", $_POST['form_prenom']);
             $insert->bindParam(":email_utilisateur", $_POST['form_email']);
             // Nous hachons notre mdp avec l'algo BCRYPT et un coût algorithmique (par défaut à 10)
             $user_password = password_hash($_POST['form_password'], PASSWORD_BCRYPT, array("cost" => 12));
             $insert->bindParam(":mot_de_passe_utilisateur", $user_password);
-            $insert->bindParam(":image_utilisateur", $file_name);
+            // $insert->bindParam(":image_utilisateur", $file_name);
             
             // $insert->bindParam(":user_password", $_POST['form_password']);
             if($insert->execute()) {
